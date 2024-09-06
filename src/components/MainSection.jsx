@@ -4,7 +4,7 @@ import SongSection from "./SongSection";
 import { useSelector } from "react-redux";
 
 const MainSection = () => {
-  const query = useSelector(state => state.query.content);
+  const query = useSelector((state) => state.query.content);
 
   return (
     <main className="mainPage">
@@ -13,8 +13,8 @@ const MainSection = () => {
         <Row>
           {query && <SongSection artistName={query} search={true} />}
           <SongSection artistName={"Queen"} />
-          <SongSection artistName={"Good Boy Daisy"} />
-          <SongSection artistName={"Dua Lipa"} id={"last-section"} />
+          <SongSection artistName={"The clash"} />
+          <SongSection artistName={"Rolling stones"} id={"last-section"} />
         </Row>
       </Col>
     </main>
