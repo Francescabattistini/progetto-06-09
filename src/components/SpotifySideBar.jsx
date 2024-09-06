@@ -6,10 +6,19 @@ const SpotifySideBar = () => {
   return (
     <aside>
       <Col xs="12">
-        <Navbar expand="lg" className="navbar-expand-md fixed-left justify-content-between" id="sidebar">
+        <Navbar
+          expand="lg"
+          className="navbar-expand-md fixed-left justify-content-between"
+          id="sidebar"
+        >
           <Container className="flex-column align-items-start">
             <Navbar.Brand href="#home">
-              <img src="assets/logo/logo.png" alt="Spotify Logo" width="131" height="40" />
+              <img
+                src="assets/logo/logo.png"
+                alt="Spotify Logo"
+                width="131"
+                height="40"
+              />
             </Navbar.Brand>
             <button
               className="navbar-toggler"
@@ -26,13 +35,19 @@ const SpotifySideBar = () => {
               <div className="navbar-nav">
                 <ul>
                   <li>
-                    <Nav.Link className="nav-item nav-link d-flex align-items-center" href="#">
+                    <Nav.Link
+                      className="nav-item nav-link d-flex align-items-center"
+                      href="#"
+                    >
                       <HouseDoorFill />
                       &nbsp; Home
                     </Nav.Link>
                   </li>
                   <li>
-                    <Nav.Link className="nav-item nav-link d-flex align-items-center" href="#">
+                    <Nav.Link
+                      className="nav-item nav-link d-flex align-items-center"
+                      href="#"
+                    >
                       <BookFill />
                       &nbsp; Your Library
                     </Nav.Link>
@@ -54,7 +69,20 @@ const SpotifySideBar = () => {
               <button className="btn login-btn" type="button">
                 Login
               </button>
-              <a href="#">Cookie Policy</a> |<a href="#"> Privacy</a>
+              <a
+                href="https://www.spotify.com/it/legal/cookies-policy/"
+                target="_blank"
+              >
+                Cookie Policy
+              </a>{" "}
+              |
+              <a
+                href="https://www.spotify.com/it/legal/privacy-policy/"
+                target="_blank"
+              >
+                {" "}
+                Privacy
+              </a>
             </div>
           </Container>
         </Navbar>
